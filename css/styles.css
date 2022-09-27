@@ -1,0 +1,204 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    overflow-x: hidden;
+    background-color: #8d99ae;
+}
+
+
+html {
+    font: 18px;
+}
+
+header {
+    overflow: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+
+}
+
+header li {
+    list-style: none;
+    float: left;
+    padding-left: 1rem;
+}
+
+
+header ul {
+    display: flex;
+    justify-content: space-around;
+   
+}
+
+a {
+    color: #edf2f4
+    
+}
+
+header nav {
+    width: 20%;
+}
+
+a:hover {
+    color: #ef233c
+}
+
+nav {
+    margin-top: 50px;
+    margin-right: 50px;
+
+}
+
+section article {
+    margin-left: 20px;
+    border: 1px solid;
+    margin-bottom: 20px;
+    padding: 5px;
+    background-color: #edf2f4 !important;
+}
+
+article h3 {
+    margin: 15px;
+    color: #2b2d42;
+}
+
+article p,
+img,
+label {
+    margin: 25px;
+    font-size: 1.2rem;
+}
+
+table,
+th,
+td {
+    border: 1px solid black;
+    border-collapse: collapse;
+    color: #edf2f4
+}
+
+main{
+    margin: 20px;
+}
+
+main h1{
+    color: #2b2d42;
+    margin-bottom: 10px;
+    margin-top: 20px;
+}
+
+main p{
+    padding-top: 5px;
+}
+
+table th {
+    background-color: #2b2d42;
+}
+
+form div {
+    margin-left: 20px;
+    margin-top: 15px;
+}
+
+.navBackground {
+    background-color: #2b2d42;
+    position: sticky;
+    top: 0px;
+}
+
+.navBackground img {
+    padding: 10px;
+}
+
+.portada {
+    height: 50vh;
+    background-image: url(./../assets/paul.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+footer {
+    margin-top: 20px;
+    background-color: #2b2d42;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.footer-title div ul {
+    margin-left: 20px;
+}
+
+.footer-list {
+    padding-top: 5px;
+    margin-left: 2rem;
+    list-style: none;
+
+}
+
+.footer-list a {
+    text-decoration: none;
+}
+
+.article-noticias {
+    border: 5px;
+}
+
+.link-mas-noticias {
+    padding: 15px;
+    text-align: center;
+}
+
+.footer-title {
+    margin-top: 20px;
+    font-size: 1.25rem;
+    color: #8d99ae;
+    text-decoration: underline;
+}
+
+
+.noticia {
+    border: 2px solid black;
+    width: 300px;
+    height: auto;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.slider {
+    display: flex;
+    overflow: auto;
+    gap: 10px;
+    padding: 15px;
+}
+
+.section-noticias{
+    display: flex;
+    flex-direction: column;
+}
+
+.section-noticias h3{
+    color: #2b2d42;
+}
+
+.iframe{
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.iframe h2{
+    color: #2b2d42;
+}
+
