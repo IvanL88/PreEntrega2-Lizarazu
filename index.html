@@ -5,13 +5,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="./css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="./css/styles.css">
     <title>Paul McCartney </title>
 </head>
 
 <body>
     <header class="navBackground">
-        
+
         <img src="./assets/logo.png" alt="logo sitio" height="40" width="200">
 
         <nav>
@@ -26,69 +27,117 @@
 
     </header>
 
-    <main>
-        <section class="portada">
-            <!--Acá iria un carrusel-->
-        </section>
+    <div class="container">
+        <main>
+            <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="false">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                        aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                        aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                        aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="./assets/paul.jpg" class="d-block w-100 carousel-img"
+                            alt="Paul en el escenario con el puño levantado">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Paul terminó su gira 22'</h5>
+                            <p>Ante miles de espectadores Paul dejó Japón.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./assets/apple-records.jpg" class="d-block w-100 carousel-img"
+                            alt="Paul mira a Jhon que sostiene una manzana">
+                        <div class="carousel-caption d-none d-md-block carosuel-font">
+                            <h5>Apple Records</h5>
+                            <p>Historia de su creación.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./assets/sgt-papper.jpg" class="d-block w-100 carousel-img" alt="Portada Sgt. Papper">
+                        <div class="carousel-caption d-none d-md-block carosuel-font">
+                            <h5>Aniversario de Sgt. Pepper's Lonely Hearts Club Band</h5>
+                            <p>Se cumplen 55 años de su lanzamiento.</p>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
 
-        <h1>Últimas noticias</h1>
+            <h1 class="last-news">Últimas noticias</h1>
 
-        <div class="slider">
+            <div class="row">
 
-            <article class="noticia">
-                <h3 class="noticia-title">Nuevo integrante</h3>
-                <img class="noticia-img" src="./assets/banda-paul.jpg" alt="banda de paul" height="100" width="200">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
-                <label>15 de Agosto, 2022</label>
-            </article>
+                <div class="col-sm-12 col-md-8 col-xxl-12">
+                    <article class="noticia noticia-destacada">
+                        <img class="noticia-img" src="./assets/banda-paul.jpg" alt="banda de paul" >
+                        <h3 class="noticia-title">Nuevo integrante</h3>                        
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+                        <label>15 de Agosto, 2022</label>
+                    </article>
+                </div>
 
-            <article class="noticia">
-                <h3 class="noticia-title">Encuentro con Ringo</h3>
-                <img src="./assets/ringo-y-paul.jpg" alt="ringo y paul" height="100" width="200">
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
-                <label>19 de Abril, 2022</label>                
-            </article>
+                <div class="col-sm-12 col-md-4 col-xxl-3">
+                    <article class="noticia">
+                        <h3 class="noticia-title">Viejo conocido</h3>
+                        <img class="noticia-img" src="./assets/ringo-y-paul.jpg" alt="ringo y paul" >
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+                        <label>19 de Abril, 2022</label>
+                    </article>
+                </div>
 
-            <article class="noticia">
-                <h3 class="noticia-title">Cumpleaños</h3>
-                <img src="./assets/cumpleanios.png" alt="cumpleaños" height="100" width="200">
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
-                <label>10 de Abril, 2022</label>                
-            </article>
+                <div class="col-sm-12 col-md-4  col-xxl-3">
+                    <article class="noticia">
+                        <h3 class="noticia-title">Cumpleaños</h3>
+                        <img class="noticia-img" src="./assets/cumpleanios.png" alt="cumpleaños" >
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+                        <label>10 de Abril, 2022</label>
+                    </article>
+                </div>
 
-            <article class="noticia">
-                <h3 class="noticia-title">Una vieja historia</h3>
-                <img src="./assets/john.png" alt="John" height="100" width="200">
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
-                <label>11 de Febrero, 2022</label>                
-            </article>
+                <div class="col-sm-12 col-md-4 col-xxl-3">
+                    <article class="noticia">
+                        <h3 class="noticia-title">Una vieja historia</h3>
+                        <img  class="noticia-img" src="./assets/john.png" alt="John" >
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+                        <label>11 de Febrero, 2022</label>
+                    </article>
+                </div>
 
-            <article class="noticia">
-                <h3 class="noticia-title">Anuncia un nuevo tour</h3>
-                <img src="./assets/tour.jpg" alt="tour" height="100" width="200">
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
-                <label>01 de Febrero, 2022</label>                
-            </article>
+                <div class="col-sm-12 col-md-4 col-xxl-3">
+                <article class="noticia">
+                    <h3 class="noticia-title">Nuevo tour</h3>
+                    <img class="noticia-img" src="./assets/tour.jpg" alt="tour" >
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+                    <label>01 de Febrero, 2022</label>
+                </article>
+                </div>
 
-            <article class="noticia">
-                <h3 class="noticia-title">Paul se despide de Japón</h3>
-                <img src="./assets/despedida.jpg" alt="Despedida de Japón" height="100" width="200">
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
-                <label>29 de Noviembre, 2021</label>                
-            </article>
-            
 
-        </div>
-        </section>
+            </div>
+            </section>
 
-        <div class="link-mas-noticias">
-            <a href="./pages/noticias.html">Más noticias</a>
-        </div>
+            <div class="link-mas-noticias">
+                <a href="./pages/noticias.html">Más noticias</a>
+            </div>
 
-    </main>
+        </main>
 
+
+    </div>
     <footer>
-        <div>               
+        <div>
             <img src="./assets/logo.png" alt="logo sitio" height="40" width="200">
         </div>
         <div>
@@ -114,8 +163,7 @@
             </ul>
         </div>
     </footer>
-
-
+    <script src="./js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>
