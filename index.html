@@ -13,17 +13,24 @@
 <body>
     <header class="navBackground">
 
+        <div class="container nav">
         <img src="./assets/logo.png" alt="logo sitio" height="40" width="200">
 
-        <nav>
-            <ul>
-                <li><a href="./index.html">Home</a></li>
-                <li><a href="./pages/bio.html">Bio</a></li>
-                <li><a href="./pages/noticias.html">Noticias</a></li>
-                <li><a href="./pages/shows.html">Shows</a></li>
-                <li><a href="./pages/contacto.html">Contacto</a></li>
-            </ul>
-        </nav>
+        <nav class="navbar navbar-expand-lg">          
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                  <a class="nav-link active" aria-current="page" href="#">Home</a>
+                  <a class="nav-link" href="./pages/bio.html">Bio</a>
+                  <a class="nav-link" href="./pages/noticias.html">Noticias</a>
+                  <a class="nav-link" href="./pages/shows.html">Shows</a>
+                  <a class="nav-link" href="./pages/contacto.html">Contacto</a>
+                </div>
+              </div>         
+          </nav>
+        </div>
 
     </header>
 
@@ -82,86 +89,86 @@
                 <div class="col-sm-12 col-md-8 col-xxl-12">
                     <article class="noticia noticia-destacada">
                         <img class="noticia-img" src="./assets/banda-paul.jpg" alt="banda de paul" >
-                        <h3 class="noticia-title">Nuevo integrante</h3>                        
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
-                        <label>15 de Agosto, 2022</label>
+                        <h3 class="noticia-titulo">Nuevo integrante</h3>                        
+                        <span class="noticia-parrafo">Lorem ipsum dolor sit amet consectetur adipisicing elit. </span>
+                        <label class="noticia-fecha">15 de Agosto, 2022</label>
                     </article>
                 </div>
 
                 <div class="col-sm-12 col-md-4 col-xxl-3">
                     <article class="noticia">
-                        <h3 class="noticia-title">Viejo conocido</h3>
+                        <h3 class="noticia-titulo">Viejo conocido</h3>
                         <img class="noticia-img" src="./assets/ringo-y-paul.jpg" alt="ringo y paul" >
-                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
-                        <label>19 de Abril, 2022</label>
-                    </article>
-                </div>
-
-                <div class="col-sm-12 col-md-4  col-xxl-3">
-                    <article class="noticia">
-                        <h3 class="noticia-title">Cumpleaños</h3>
-                        <img class="noticia-img" src="./assets/cumpleanios.png" alt="cumpleaños" >
-                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
-                        <label>10 de Abril, 2022</label>
+                        <span class="noticia-parrafo">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</span>
+                        <label class="noticia-fecha">19 de Abril, 2022</label>
                     </article>
                 </div>
 
                 <div class="col-sm-12 col-md-4 col-xxl-3">
                     <article class="noticia">
-                        <h3 class="noticia-title">Una vieja historia</h3>
+                        <h3 class="noticia-titulo">Cumpleaños</h3>
+                        <img class="noticia-img" src="./assets/cumpleanios.png" alt="cumpleaños" >
+                        <span class="noticia-parrafo">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</class=>
+                        <label class="noticia-fecha">10 de Abril, 2022</label>
+                    </article>
+                </div>
+
+                <div class="col-sm-12 col-md-4 col-xxl-3">
+                    <article class="noticia">
+                        <h3 class="noticia-titulo">Una vieja historia</h3>
                         <img  class="noticia-img" src="./assets/john.png" alt="John" >
-                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
-                        <label>11 de Febrero, 2022</label>
+                        <span class="noticia-parrafo">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</span>
+                        <label class="noticia-fecha">11 de Febrero, 2022</label>
                     </article>
                 </div>
 
                 <div class="col-sm-12 col-md-4 col-xxl-3">
                 <article class="noticia">
-                    <h3 class="noticia-title">Nuevo tour</h3>
+                    <h3 class="noticia-titulo">Nuevo tour</h3>
                     <img class="noticia-img" src="./assets/tour.jpg" alt="tour" >
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
-                    <label>01 de Febrero, 2022</label>
+                    <span class="noticia-parrafo">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</span>
+                    <label class="noticia-fecha">01 de Febrero, 2022</label>
                 </article>
                 </div>
 
 
-            </div>
-            </section>
+            </div>         
 
             <div class="link-mas-noticias">
                 <a href="./pages/noticias.html">Más noticias</a>
             </div>
 
         </main>
-
-
     </div>
+    
     <footer>
-        <div>
-            <img src="./assets/logo.png" alt="logo sitio" height="40" width="200">
-        </div>
-        <div>
-            <label class="footer-title">Mapa del sitio</label>
-            <ul class="footer-list">
-                <li><a href="./index.html">Home</a></li>
-                <li><a href="./pages/bio.html">Bio</a></li>
-                <li><a href="./pages/noticias.html">Noticias</a></li>
-                <li><a href="./pages/shows.html">Shows</a></li>
-                <li><a href="./pages/contacto.html">Contacto</a></li>
-            </ul>
-
-        </div>
-        <div>
-            <label class="footer-title">Sitios de interés</label>
-            <ul class="footer-list">
-                <li>
-                    <a href="https://www.paulmccartney.com/">Sitio oficial Paul McCartney</a>
-                </li>
-                <li>
-                    <a href="https://www.thebeatles.com/">Sitio Oficial The Beatles</a>
-                </li>
-            </ul>
-        </div>
+        <div class="container row">
+            <div class="col-md-4 col-sm-12 ">
+                <img src="./assets/logo.png" alt="logo sitio" height="40" width="200">
+            </div>
+            <div class="col-md-4 col-sm-12 "">
+                <label class="footer-title">Mapa del sitio</label>
+                <ul class="footer-list">
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="./pages/bio.html">Bio</a></li>
+                    <li><a href="./pages/noticias.html">Noticias</a></li>
+                    <li><a href="./pages/shows.html">Shows</a></li>
+                    <li><a href="./pages/contacto.html">Contacto</a></li>
+                </ul>
+    
+            </div>
+            <div class="col-md-4 col-sm-12 "">
+                <label class="footer-title">Sitios de interés</label>
+                <ul class="footer-list">
+                    <li>
+                        <a href="https://www.paulmccartney.com/">Sitio oficial Paul McCartney</a>
+                    </li>
+                    <li>
+                        <a href="https://www.thebeatles.com/">Sitio Oficial The Beatles</a>
+                    </li>
+                </ul>
+            </div>
+        </div>      
     </footer>
     <script src="./js/bootstrap.bundle.min.js"></script>
 </body>
